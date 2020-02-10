@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "tslint -c tslint.json -p tsconfig.json"
   },
   "keywords": [],
   "author": {
@@ -52,7 +52,7 @@
               "entryPoints": [
                 {
                   "html": "./src/index.html",
-                  "js": "./src/renderer.js",
+                  "js": "./src/renderer.tsx",
                   "name": "main_window"
                 }
               ]
@@ -72,8 +72,12 @@
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "css-loader": "^3.4.2",
     "electron": "8.0.0",
+    "fork-ts-checker-webpack-plugin": "^4.0.3",
     "node-loader": "^0.6.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.1",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
