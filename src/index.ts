@@ -15,6 +15,12 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     height: 600,
     width: 600,
+    minWidth: 300,
+    minHeight: 300,
+    backgroundColor: '#f5f8fa',
+    webPreferences: {
+      nodeIntegration: true
+    },
   });
 
   // mainWindow.setMenu(null);
