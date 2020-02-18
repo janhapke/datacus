@@ -28,4 +28,11 @@
 
 import './index.css';
 
-console.log('👋 This message is being logged by "renderer.tsx", included via webpack');
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { App } from './App';
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+);

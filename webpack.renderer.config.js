@@ -12,6 +12,6 @@ module.exports = {
   },
   plugins: plugins,
   resolve: {
-    extensions: ['.js', '.ts', '.css']
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css']
   },
 };
