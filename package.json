@@ -83,6 +83,7 @@
     "@blueprintjs/core": "^3.23.1",
     "@types/react": "^16.9.20",
     "@types/react-dom": "^16.9.5",
+    "cacheable-request": "^10.2.7",
     "electron-forge": "^5.2.4",
     "electron-squirrel-startup": "^1.0.0",
     "mysql2": "^2.1.0",
